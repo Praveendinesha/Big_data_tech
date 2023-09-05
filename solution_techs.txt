@@ -1,0 +1,77 @@
+## ***Big Data Problems And Solution Technologies***
+
+#BIG DATA
+'''
+BIG DATA :
+•	When we get the problem with the data processing and data storage that is big data.
+•	The problems is not only Volume. It can be Volume, Velocity, Values, Variety (problem with unstructured or semi structured datum) and Processing.
+•	In the matter of Volume problem, globally many says if we are using datas in TB’s when we will opt for big data. But it is not actually perfcect. Bcoz the size can be any.
+•	For ex: If we gtting 4gb datum into the 3gb storage disk, where the 1gb excess data is a problem according to this use case. SO VOLUME PROBLEM IS NOT ONLY IN TB, IT DEPENDS ON THE USE CASE.
+•	Problem is not restricted to volume only, it can be any like some getting problems like slowness when PROCESSING, where a;lso we opt for big data.
+'''
+#THERE ARE MANY TECHONOLGIES TO OVERCOME THE BIG DATA, SOME MAIN ARE HADOOP and SPARK . Some tech with explaination below:
+
+'''
+HDFS  - HDFS stands for Hadoop Distributed File System. This environment has many tools like hive,hbase etc. HDFS is a distributed file system designed to store and
+      manag0e very large files and data sets across multiple computers of a team members compueters.
+      HDFS is a software, which has a framework for processing and analyzing big data.
+      In the context of Hadoop, a framework is a structured environment or software platform that provides
+      tools and rules for tasks like storing and processing large volumes of data.
+      It helps developers build and manage big data solutions efficiently.
+
+hive -    Hive provides a structured way to store and manage data in Hadoop's distributed file system (HDFS).
+    It uses a schema-on-read approach, which means you can apply structure to data when querying it, rather than when it's ingested.
+    This flexibility is particularly valuable when dealing with large, diverse datasets common in big data environments.
+    Hive is a data warehousing and query language system that is a key component of the Hadoop ecosystem, designed for big data processing.
+    It provides a way to structure and query large datasets stored in Hadoop's distributed file system, HDFS
+
+hbase -    HBase stands for "Hadoop Database."HBase is an open-source, distributed, and scalable NoSQL database system designed for handling large volumes of data.
+    It is part of the Apache Hadoop ecosystem and is often used for use cases that require random read and write access to massive datasets with low-latency requirements.
+    HBase is a column-family store, which means it organizes data into column families rather than traditional rows and columns. This allows for flexible and efficient data modeling.
+    columnar store example:
+
+Date:        2023-01-15   2023-01-16   ...
+Customer ID: 101          102          ...
+Product ID:  P001         P002         ...
+Quantity:    3            2            ...
+Price/Unit:  $25.00       $30.00       ...
+Total Sales: $75.00       $60.00       ...
+
+mr -   map reduce
+      "MR" typically refers to "MapReduce," which is a programming model and processing framework used in the Hadoop ecosystem for distributed data processing.
+      MapReduce divides tasks into a "Map" phase, where data is processed in parallel, and a "Reduce" phase, where the results are aggregated.
+      It's commonly used for batch processing and analysis of large datasets in a distributed computing environment.
+
+
+kafka -   Kafka is designed to handle the continuous flow of data in real-time or near-real-time, and it **can handle both high-speed and large volumes of data**.
+          It enables data producers to send data continuously, and data consumers can process and consume this data as it arrives.
+          Kafka's ability to manage data streams makes it a valuable tool for scenarios where data arrives at a high velocity and needs to be ingested, stored, and processed efficiently.
+
+casandra  - Apache Cassandra is a popular NoSQL database that is often used in conjunction with big data technologies. Can store massive datum.
+            It is commonly used in scenarios where **data volume and velocity are significant**, making it a valuable tool within the big data landscape.
+
+pyspark   - PySpark is the Python library for Apache Spark, an open-source, distributed data processing framework
+            Spark is designed for big data processing and analytics, and PySpark allows Python developers to leverage Spark's capabilities in their applications.
+            PySpark **enables distributed data processing, allowing you to work with large datasets that can be distributed across a cluster of computers**.
+
+grafana -   Grafana is a popular open-source platform for monitoring and observability. While Grafana itself is not a big data storage or processing system,
+            it is commonly used in conjunction with big data technologies to **visualize and analyze data** collected from various sources.
+
+aws glue - AWS Glue is a fully managed Extract, Transform, Load (ETL) service provided by Amazon Web Services (AWS). we dont need to do it individually by manually.
+         It's named "Glue" because it helps "glue" together different data sources, making it easier to work with data in a seamless and automated way'''
+
+#SO HADOOP has several specific tools for data processing, storage,visualization,testing etc, but SPARK has the tool only to do data processing only. we dont worry for storing data, we can use other file system for storing like hadoop or anything
+#These above technologies play critical roles in big data and **distributed computing environments**, offering solutions for real-time data streaming (Kafka),
+#data processing and analysis (PySpark and MapReduce), distributed NoSQL databases (HBase and Cassandra), and more.
+#They are used in various industries for handling and making sense of large volumes of data.
+
+
+# THERE ARE LAYERS of technologies IN BIG DATA.
+'''
+1) DATA STORAGE
+2)DATA PROCESSING - data analysis
+3) DATA ANALYTICS - data science, machine learning, ai
+4)DATASCHEDULING
+5) DATA TESTING
+6)DATA PIPLINE .. for this each process there aremany techs are there. Example: storage-hdfs,etc; processing-pyspark,hdfs,hive,etc; visualization-hdfs,grafana,etc.
+'''
